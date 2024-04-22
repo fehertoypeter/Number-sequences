@@ -3,18 +3,31 @@ body {
 }
 
 .container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  max-width: 22rem;
+  overflow: hidden;
+  color: #223968;
+  background: #c1dfef;
+  margin: 2em auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #game-container {
   margin-bottom: 20px;
+
+  width: 80%;
 }
 
 #number-sequence {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 25px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 #feedback {
@@ -26,20 +39,43 @@ body {
 }
 
 input[type="text"] {
-  padding: 5px;
-  margin-bottom: 10px;
+  display: inline-block;
+  width: 90%;
+  height: 50px;
+
+  border: 1px solid #ccc;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  width: 100%;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+#input-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  margin-top: 20px;
+  justify-content: center;
+  width: 300px;
+  margin: 0 auto; /* Középre igazítás */
+  justify-items: center;
+}
+
+.input-button {
+  background: hsl(210, 25%, 95%);
   border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  color: #223968;
+  display: flex;
+  justify-content: center; /* Tartalom vízszintes középre igazítása */
+  align-items: center; /* Tartalom függőleges középre igazítása */
 }
 
 #difficulty {

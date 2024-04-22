@@ -39,7 +39,7 @@ const database = [
   },
   {
     difficulty: "easy",
-    formula: "Minden számhoz négyet adunk hozzá.",
+    formula: "Minden számhoz egy adott számot adunk hozzá.",
     sequences: [
       [23, 27, 31, 35, 39, 43],
       [82, 86, 90, 94, 98, 102],
@@ -61,12 +61,6 @@ const database = [
       [3, 7, 11, 15, 19, 23],
       [48, 52, 56, 60, 64, 68],
       [94, 98, 102, 106, 110, 114],
-    ],
-  },
-  {
-    difficulty: "easy",
-    formula: "Minden számhoz kilencet adunk hozzá.",
-    sequences: [
       [20, 29, 38, 47, 56, 65],
       [79, 88, 97, 106, 115, 124],
       [15, 24, 33, 42, 51, 60],
@@ -87,12 +81,6 @@ const database = [
       [92, 101, 110, 119, 128, 137],
       [65, 74, 83, 92, 101, 110],
       [29, 38, 47, 56, 65, 74],
-    ],
-  },
-  {
-    difficulty: "easy",
-    formula: "Minden számhoz ötöt adunk hozzá.",
-    sequences: [
       [48, 53, 58, 63, 68],
       [15, 20, 25, 30, 35],
       [72, 77, 82, 87, 92],
@@ -113,12 +101,6 @@ const database = [
       [56, 61, 66, 71, 76],
       [30, 35, 40, 45, 50],
       [20, 25, 30, 35, 40],
-    ],
-  },
-  {
-    difficulty: "easy",
-    formula: "Minden számhoz 6-ot adunk hozzá.",
-    sequences: [
       [83, 89, 95, 101, 107, 113],
       [57, 63, 69, 75, 81, 87],
       [14, 20, 26, 32, 38, 44],
@@ -169,7 +151,7 @@ const database = [
   },
   {
     difficulty: "easy",
-    formula: "Minden számból kivonunk 3-at.",
+    formula: "Minden számból kivonunk egy adott szűmot.",
     sequences: [
       [95, 91, 87, 83, 79, 75],
       [78, 74, 70, 66, 62, 58],
@@ -191,12 +173,6 @@ const database = [
       [75, 71, 67, 63, 59, 55],
       [93, 89, 85, 81, 77, 73],
       [80, 76, 72, 68, 64, 60],
-    ],
-  },
-  {
-    difficulty: "easy",
-    formula: "Minden számból kivonunk hetet.",
-    sequences: [
       [94, 87, 80, 73, 66, 59],
       [87, 80, 73, 66, 59, 52],
       [71, 64, 57, 50, 43, 36],
@@ -291,6 +267,16 @@ const database = [
       [28, 49, 79, 128, 207],
       [36, 64, 104, 168, 272],
       [45, 80, 129, 209, 338],
+      [5, 7, 12, 19, 31],
+      [10, 15, 25, 40, 65],
+      [3, 8, 14, 22, 36],
+      [6, 11, 18, 29, 47],
+      [12, 19, 31, 50, 81],
+      [8, 13, 21, 34, 55],
+      [15, 23, 38, 61, 99],
+      [7, 12, 20, 32, 52],
+      [9, 14, 23, 37, 60],
+      [4, 9, 15, 24, 39],
     ],
   },
   {
@@ -337,35 +323,97 @@ const database = [
     ],
   },
   {
-    difficulty: "medium",
-    formula: "Minden szám az előző két szám összege.",
+    difficulty: "hard",
+    formula: "Minden szám az előző szám kétszerese majd -1, -2, -4, -8, -16",
     sequences: [
-      [5, 7, 12, 19, 31],
-      [10, 15, 25, 40, 65],
-      [3, 8, 14, 22, 36],
-      [6, 11, 18, 29, 47],
-      [12, 19, 31, 50, 81],
-      [8, 13, 21, 34, 55],
-      [15, 23, 38, 61, 99],
-      [7, 12, 20, 32, 52],
-      [9, 14, 23, 37, 60],
-      [4, 9, 15, 24, 39],
+      [15, 29, 56, 108, 208, 400],
+      [16, 31, 60, 116, 224, 432],
+      [20, 39, 76, 148, 288, 560],
+      [2, 3, 4, 4, 0, -16],
+      [8, 15, 28, 52, 96, 176],
+      [17, 33, 64, 124, 240, 464],
+      [10, 19, 36, 68, 128, 240],
+      [5, 9, 16, 28, 48, 80],
+      [30, 59, 116, 228, 448, 880],
+      [9, 17, 32, 60, 112, 208],
+      [13, 25, 48, 92, 176, 336],
+      [14, 27, 52, 100, 192, 368],
+      [18, 35, 68, 132, 256, 496],
     ],
   },
   {
     difficulty: "hard",
-    formula: "Minden szám a előző szám kétszerese.",
+    formula: "Prím számok",
     sequences: [
-      [3, 6, 12, 24, 48],
-      [7, 14, 28, 56, 112],
-      [6, 12, 24, 48, 96],
-      [9, 18, 36, 72, 144],
-      [13, 26, 52, 104, 208],
-      [17, 34, 68, 136, 272],
-      [21, 42, 84, 168, 336],
-      [24, 48, 96, 192, 384],
-      [27, 54, 108, 216, 432],
-      [30, 60, 120, 240, 480],
+      [2, 3, 5, 7, 11, 13],
+      [17, 19, 23, 29, 31, 37],
+      [41, 43, 47, 53, 59, 61],
+      [67, 71, 73, 79, 83, 89],
+      [97, 101, 103, 107, 109, 113],
+    ],
+  },
+  {
+    difficulty: "easy",
+    formula: "a számok 1 el 2 vel 3 al stb értékkel nőnek",
+    sequences: [
+      [15, 16, 18, 21, 25, 30],
+      [16, 17, 19, 22, 26, 31],
+      [20, 21, 23, 26, 30, 35],
+      [2, 3, 5, 8, 12, 17],
+      [8, 9, 11, 14, 18, 23],
+      [17, 18, 20, 23, 27, 32],
+      [10, 11, 13, 16, 20, 25],
+      [5, 6, 8, 11, 15, 20],
+      [30, 31, 33, 36, 40, 45],
+      [9, 10, 12, 15, 19, 24],
+      [13, 14, 16, 19, 23, 28],
+      [14, 15, 17, 20, 24, 29],
+      [18, 19, 21, 24, 28, 33],
+      [56, 57, 59, 62, 66, 71],
+      [34, 35, 37, 40, 44, 49],
+      [23, 24, 26, 29, 33, 38],
+      [18, 19, 21, 24, 28, 33],
+      [78, 79, 81, 84, 88, 93],
+    ],
+  },
+  {
+    difficulty: "hard",
+    formula: "2^3 3^3 4^3 5^3 stb",
+    sequences: [[8, 27, 64, 125, 216, 343]],
+  },
+  {
+    difficulty: "medium",
+    formula: "2^2 3^2 4^2 5^2 stb",
+    sequences: [
+      [4, 9, 16, 25, 36, 49],
+      [9, 16, 25, 36, 49, 64],
+      [16, 25, 36, 49, 68, 81],
+      [25, 36, 49, 68, 81, 100],
+      [36, 49, 68, 81, 100, 121],
+    ],
+  },
+  {
+    difficulty: "medium",
+    formula: "Az első számok 5 el nőnek a második számok 3 al",
+    sequences: [
+      [15, 20, 20, 23, 25, 26],
+      [16, 40, 21, 43, 26, 46],
+      [20, 10, 25, 13, 30, 16],
+      [2, 5, 7, 8, 12, 11],
+      [8, 9, 13, 12, 18, 15],
+      [17, 15, 22, 18, 27, 21],
+      [10, 15, 15, 18, 20, 21],
+      [5, 4, 10, 7, 15, 10],
+      [30, 32, 35, 35, 40, 38],
+      [9, 14, 14, 17, 19, 20],
+      [13, 18, 18, 21, 23, 24],
+      [14, 20, 19, 23, 24, 26],
+      [18, 23, 23, 26, 28, 29],
+      [56, 50, 61, 53, 66, 56],
+      [34, 35, 39, 38, 44, 41],
+      [23, 20, 28, 23, 33, 26],
+      [18, 16, 23, 19, 28, 22],
+      [78, 70, 83, 73, 88, 76],
     ],
   },
 ];
@@ -401,17 +449,32 @@ function assignRandomMissingIndex(game) {
   game.missingIndex = Math.floor(Math.random() * game.sequences[0].length);
 }
 
+document.querySelectorAll(".input-button").forEach((item) => {
+  item.addEventListener("click", (event) => {
+    const digit = event.target.dataset.digit;
+    if (digit !== undefined) {
+      document.getElementById("guess").value += digit;
+    } else {
+      document.getElementById("guess").value = "";
+    }
+  });
+});
+
+document.getElementById("clearInput").addEventListener("click", () => {
+  document.getElementById("guess").value = "";
+});
+
 function checkGuess() {
   const guess = parseInt(document.getElementById("guess").value);
   const missingNumber = currentGame.sequences[currentGame.missingIndex];
   if (guess === missingNumber[currentGame.missingIndex]) {
     document.getElementById("feedback").textContent = "Correct!";
-    document.getElementById("feedback").style.color = "green";
+    document.getElementById("guess").style.backgroundColor = "#CDDA32";
   } else {
     document.getElementById("feedback").textContent =
       "Incorrect! The missing number is " +
       missingNumber[currentGame.missingIndex];
-    document.getElementById("feedback").style.color = "red";
+    document.getElementById("guess").style.backgroundColor = "rgb(255, 0, 0)";
     // Helyes számsor megjelenítése
     const correctSequence = currentGame.sequences[currentGame.missingIndex];
     document.getElementById("correct-sequence").textContent =

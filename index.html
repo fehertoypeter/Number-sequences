@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Missing Number Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -12,11 +20,31 @@
       <div id="game-container">
         <div id="number-sequence"></div>
         <input type="text" id="guess" placeholder="Enter your guess" />
-        <button onclick="checkGuess()">Check</button>
+
         <div id="feedback"></div>
         <div id="formula"></div>
         <div id="correct-sequence"></div>
       </div>
+
+      <div id="input-buttons">
+        <button class="input-button" data-digit="1">1</button>
+        <button class="input-button" data-digit="2">2</button>
+        <button class="input-button" data-digit="3">3</button>
+        <button class="input-button" data-digit="4">4</button>
+        <button class="input-button" data-digit="5">5</button>
+        <button class="input-button" data-digit="6">6</button>
+        <button class="input-button" data-digit="7">7</button>
+        <button class="input-button" data-digit="8">8</button>
+        <button class="input-button" data-digit="9">9</button>
+        <button id="clearInput" class="input-button">
+          <i class="fa-solid fa-delete-left"></i>
+        </button>
+        <button class="input-button" data-digit="0">0</button>
+        <button onclick="checkGuess()" id="check" class="input-button">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
       <div id="difficulty">
         <label for="difficulty-select">Select difficulty:</label>
         <select id="difficulty-select">
