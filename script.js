@@ -421,6 +421,8 @@ const database = [
 let currentGame = {};
 
 function newGame() {
+  document.getElementById("guess").style.backgroundColor = "";
+  document.getElementById("guess").value = "";
   const difficulty = document.getElementById("difficulty-select").value;
   let filteredDatabase;
   if (difficulty === "random") {
@@ -439,7 +441,7 @@ function newGame() {
   });
   document.getElementById("number-sequence").textContent =
     numberSequenceWithPlaceholder.join(" ");
-  document.getElementById("guess").value = "";
+
   document.getElementById("feedback").textContent = "";
   document.getElementById("formula").textContent = "";
   document.getElementById("correct-sequence").textContent = "";
@@ -455,14 +457,11 @@ document.querySelectorAll(".input-button").forEach((item) => {
     if (digit !== undefined) {
       document.getElementById("guess").value += digit;
     } else {
-      document.getElementById("guess").value = "";
     }
   });
 });
 
-document.getElementById("clearInput").addEventListener("click", () => {
-  document.getElementById("guess").value = "";
-});
+document.getElementById("clearInput").addEventListener("click", () => {});
 
 function checkGuess() {
   const guess = parseInt(document.getElementById("guess").value);
@@ -471,14 +470,14 @@ function checkGuess() {
     document.getElementById("feedback").textContent = "Correct!";
     document.getElementById("guess").style.backgroundColor = "#CDDA32";
   } else {
-    document.getElementById("feedback").textContent =
-      "Incorrect! The missing number is " +
-      missingNumber[currentGame.missingIndex];
+    // document.getElementById("feedback").textContent =
+    //  "Incorrect! The missing number is " +
+    //  missingNumber[currentGame.missingIndex];
     document.getElementById("guess").style.backgroundColor = "rgb(255, 0, 0)";
     // Helyes számsor megjelenítése
     const correctSequence = currentGame.sequences[currentGame.missingIndex];
     document.getElementById("correct-sequence").textContent =
-      "Correct Sequence: " + correctSequence.join(", ");
+      "Correct:" + correctSequence.join(", ");
   }
   document.getElementById("formula").textContent =
     "Formula: " + currentGame.formula;

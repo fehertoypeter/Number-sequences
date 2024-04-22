@@ -1,7 +1,10 @@
 body {
   font-family: Arial, sans-serif;
 }
-
+h1 {
+  font-size: 1.7em;
+  color: #223968;
+}
 .container {
   border-radius: 10px;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15),
@@ -80,4 +83,41 @@ input[type="text"] {
 
 #difficulty {
   margin-top: 20px;
+}
+
+div#feedback {
+  width: 100%;
+  text-align: center;
+}
+
+div#formula {
+  width: 100%;
+  text-align: center;
+}
+
+svg {
+  width: 30px;
+}
+
+div#correct-sequence {
+  text-align: center;
+  margin: 10px 0px;
+}
+#game-container {
+  margin-bottom: 20px;
+  width: 80%;
+  min-height: 230px;
+}
+.feedback-container {
+  display: flex;
+}
+
+.feedback-container {
+  display: flex;
+  height: 100px;
+  flex-direction: column;
+  justify-content: center;
+}
+#check {
+  background-color: #cdda32;
 }
